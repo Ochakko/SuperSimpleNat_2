@@ -123,8 +123,8 @@ int AnalyzeIp(int deviceNo, u_char *data, int size, short kind)
       DebugPrintf("convip : Cast2Icmp4 error !!!\n\n");
       return -1;
     }
-    ptr = tmpptr;
-    rest = tmprest;
+    //ptr = tmpptr;
+    //rest = tmprest;
 
     sum = CheckSum(ptr, len);
     if((sum != 0)&&(sum != 0xFFFF)){
